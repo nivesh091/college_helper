@@ -1,0 +1,7 @@
+{
+  "name": "StudyPulse - Personal Productivity & Study Management Dashboard",
+  "description": "A complete, professional, modern, responsive Personal Productivity + Study Management Dashboard. Manage subjects, chapters, timetable, tasks, goals, habits, notes, and study timer offline with LocalStorage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
