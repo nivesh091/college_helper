@@ -345,7 +345,7 @@
     }
 
     .btn-lg {
-      padding: 10px 20px;
+      padding: 8px 10px;
       font-size: 15px;
     }
 
@@ -1109,6 +1109,10 @@
     .timetable-scroll-container {
       overflow-x: auto;
       max-width: 100%;
+    }
+
+    .myclasss{
+      flex-wrap: wrap;
     }
 
     .timetable-table {
@@ -3001,8 +3005,8 @@
 
           <!-- Filter & Search Toolbar -->
           <div class="card mb-4" style="margin-bottom: 20px;">
-            <div class="flex items-center justify-between flex-wrap gap-3">
-              <div class="flex items-center gap-2 flex-wrap">
+            <div class="flex items-center justify-between flex-wrap gap-3 myclasss">
+              <div class="flex items-center gap-2 flex-wrap myclasss">
                 <button class="btn btn-sm btn-secondary active-filter" data-goal-filter="all"
                   onclick="filterGoals('all')">All</button>
                 <button class="btn btn-sm btn-secondary" data-goal-filter="important"
@@ -3016,7 +3020,7 @@
                 <button class="btn btn-sm btn-secondary" data-goal-filter="week" onclick="filterGoals('week')">This
                   Week</button>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <select class="form-control" style="width: auto; font-size: 12px; padding: 5px 10px;"
                   onchange="sortGoals(this.value)">
                   <option value="deadline">Sort by Deadline</option>
@@ -3053,11 +3057,11 @@
 
           <!-- Filter & Category Toolbar -->
           <div class="card mb-4" style="margin-bottom: 20px;">
-            <div class="flex items-center justify-between flex-wrap gap-3">
-              <div class="flex items-center gap-2 flex-wrap" id="todo-category-pills">
+            <div class="flex items-center justify-between flex-wrap gap-3 myclasss">
+              <div class="flex items-center gap-2 flex-wrap myclasss" id="todo-category-pills">
                 <!-- Rendered by JS -->
               </div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <select class="form-control" style="width: auto; font-size: 12px; padding: 5px 10px;"
                   onchange="filterTodoStatus(this.value)">
                   <option value="all">All Tasks</option>
@@ -3116,8 +3120,8 @@
 
           <!-- Subject filter bar -->
           <div class="card mb-4" style="margin-bottom: 20px;">
-            <div class="flex items-center justify-between flex-wrap gap-3">
-              <div class="flex items-center gap-2">
+            <div class="flex items-center justify-between flex-wrap gap-3 myclasss">
+              <div class="flex items-center gap-2 myclasss">
                 <label style="margin:0; font-size:13px; font-weight:600;">Filter by Subject:</label>
                 <select class="form-control" id="chapter-subject-filter" style="width: auto;"
                   onchange="filterChaptersBySubject(this.value)">
@@ -3175,11 +3179,11 @@
 
           <div class="timetable-wrapper">
             <div class="timetable-toolbar">
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <span class="badge badge-indigo">Drag & Drop Supported</span>
                 <span class="text-xs text-muted">Click any cell to schedule a class</span>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <button class="btn btn-secondary btn-sm" onclick="clearTimetableConfirmation()">Clear Grid</button>
               </div>
             </div>
@@ -3206,14 +3210,14 @@
 
           <div class="calendar-wrapper">
             <div class="flex items-center justify-between mb-4 flex-wrap gap-2" style="margin-bottom: 16px;">
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <button class="btn btn-secondary btn-sm" onclick="changeCalendarMonth(-1)">&larr; Prev</button>
                 <button class="btn btn-secondary btn-sm" onclick="resetCalendarToToday()">Today</button>
                 <button class="btn btn-secondary btn-sm" onclick="changeCalendarMonth(1)">Next &rarr;</button>
                 <h2 id="calendar-month-year" style="font-size: 16px; font-weight: 700; margin-left: 8px;">Month Year
                 </h2>
               </div>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <span class="badge badge-rose">Exam</span>
                 <span class="badge badge-amber">Assignment</span>
                 <span class="badge badge-indigo">Goal Deadline</span>
@@ -3234,7 +3238,7 @@
               <p>Structure each day with connected timetable classes, tasks, habits, and study goals.</p>
             </div>
             <div class="view-actions">
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <button class="btn btn-secondary btn-sm active-planner-tab" id="btn-planner-daily"
                   onclick="switchPlannerTab('daily')">Daily Planner</button>
                 <button class="btn btn-secondary btn-sm" id="btn-planner-weekly"
@@ -3264,8 +3268,8 @@
           </div>
 
           <div class="card mb-4" style="margin-bottom: 20px;">
-            <div class="flex items-center justify-between flex-wrap gap-3">
-              <div class="flex items-center gap-2">
+            <div class="flex items-center justify-between flex-wrap gap-3 myclasss">
+              <div class="flex items-center gap-2 myclasss">
                 <input type="text" class="form-control" placeholder="Search notes..."
                   style="width: 220px; font-size: 12px; padding: 5px 10px;" oninput="searchNotes(this.value)">
                 <select class="form-control" id="notes-subject-filter"
@@ -3321,7 +3325,7 @@
           </div>
 
           <div class="card mb-4" style="margin-bottom: 20px;">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-between myclasss">
               <div>
                 <h3 style="font-size: 15px; font-weight: 600;">Habit Consistency</h3>
                 <p class="text-sm text-muted">Tap any circle to toggle today's completion. Maintain your flame streak
@@ -3352,7 +3356,7 @@
           <div class="dashboard-grid">
             <!-- Timer Card -->
             <div class="card col-6" style="text-align: center; padding: 28px;">
-              <div class="flex items-center justify-center gap-2 mb-4" style="margin-bottom: 18px;">
+              <div class="flex items-center justify-center gap-2 mb-4 myclasss" style="margin-bottom: 18px;">
                 <button class="btn btn-sm btn-secondary active-timer-mode" id="timer-mode-pomodoro"
                   onclick="setTimerMode('pomodoro')">Pomodoro (25m)</button>
                 <button class="btn btn-sm btn-secondary" id="timer-mode-shortbreak"
@@ -3384,7 +3388,7 @@
                 </div>
               </div>
 
-              <div class="flex items-center justify-center gap-3">
+              <div class="flex items-center justify-center gap-3 myclasss">
                 <button class="btn btn-primary btn-lg" id="timer-toggle-btn" onclick="toggleStudyTimer()">
                   <span class="icon-slot" data-icon="play"></span>
                   <span id="timer-toggle-label">Start Session</span>
@@ -3469,7 +3473,7 @@
               </div>
               <div class="form-group">
                 <label>Theme Mode</label>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 myclasss">
                   <button class="btn btn-secondary btn-sm" onclick="setAppTheme('light')">Light Mode</button>
                   <button class="btn btn-secondary btn-sm" onclick="setAppTheme('dark')">Dark Mode</button>
                   <button class="btn btn-secondary btn-sm" onclick="setAppTheme('system')">System Default</button>
@@ -3477,7 +3481,7 @@
               </div>
               <div class="form-group">
                 <label>Accent Color</label>
-                <div class="flex items-center gap-2 flex-wrap">
+                <div class="flex items-center gap-2 flex-wrap myclasss">
                   <button class="btn btn-sm btn-secondary" style="border-color:#4f46e5; color:#4f46e5;"
                     onclick="setAppAccent('indigo')">Indigo</button>
                   <button class="btn btn-sm btn-secondary" style="border-color:#059669; color:#059669;"
@@ -3494,7 +3498,7 @@
               </div>
               <div class="form-group">
                 <label>Card Style & Density</label>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-2 myclasss">
                   <select class="form-control" id="settings-card-style" onchange="setAppCardStyle(this.value)">
                     <option value="modern">Modern Rounded</option>
                     <option value="minimal">Minimalist Border</option>
@@ -3509,28 +3513,7 @@
             </div>
 
             <!-- PWA App Installation & Offline -->
-            <div class="card col-12">
-              <div class="card-header">
-                <h3 class="card-title">
-                  <span class="icon-slot" data-icon="download"></span>
-                  <span>Install StudyPulse App (PWA)</span>
-                </h3>
-                <span class="badge badge-emerald" id="pwa-status-badge">App Ready</span>
-              </div>
-              <p class="text-sm text-muted mb-3" style="margin-bottom: 12px;">Install StudyPulse directly onto your
-                Android phone, iPhone, iPad, Windows, or Mac. Runs in a dedicated distraction-free window with 100%
-                offline access and fast home-screen launch.</p>
-              <div class="flex items-center gap-2 flex-wrap">
-                <button class="btn btn-primary btn-sm" id="settings-install-app-btn" onclick="triggerPWAInstall()">
-                  <span class="icon-slot" data-icon="download"></span>
-                  <span>Install App on Device</span>
-                </button>
-                <button class="btn btn-secondary btn-sm" onclick="showAppInstallationGuideModal()">
-                  <span class="icon-slot" data-icon="smartphone"></span>
-                  <span>Installation Guide (iOS / Android / PC)</span>
-                </button>
-              </div>
-            </div>
+            
 
             <!-- Demo Data Controls -->
             <div class="card col-6">
@@ -3542,7 +3525,7 @@
               </div>
               <p class="text-sm text-muted mb-3" style="margin-bottom: 12px;">Restore realistic study examples or wipe
                 demo data to start fresh.</p>
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 myclasss">
                 <button class="btn btn-secondary btn-sm" onclick="restoreDemoDataAction()">
                   <span class="icon-slot" data-icon="rotate-ccw"></span>
                   <span>Restore Demo Data</span>
@@ -3564,7 +3547,7 @@
               </div>
               <p class="text-sm text-muted mb-3" style="margin-bottom: 12px;">Export all your workspace data to a JSON
                 backup file or restore from a previous file.</p>
-              <div class="flex items-center gap-2 flex-wrap">
+              <div class="flex items-center gap-2 flex-wrap myclasss">
                 <button class="btn btn-secondary btn-sm" onclick="exportDataJSON()">
                   <span class="icon-slot" data-icon="download"></span>
                   <span>Export JSON Backup</span>
@@ -5242,7 +5225,7 @@
         listHtml = importantGoals.map(g => `
       <div class="flex items-center justify-between p-2 mb-2" style="border-bottom: 1px solid var(--border); padding: 10px 0;">
         <div style="flex: 1; min-width: 0; padding-right: 12px;">
-          <div class="flex items-center gap-2 flex-wrap">
+          <div class="flex items-center gap-2 flex-wrap myclasss">
             <span style="font-weight: 600; font-size: 14px; color: var(--text-primary);" class="truncate">${escapeHtml(g.title)}</span>
             <span class="badge ${g.priority === 'Critical' ? 'badge-rose' : g.priority === 'High' ? 'badge-amber' : 'badge-gray'}">${g.priority}</span>
             <span class="badge ${g.status === 'Completed' ? 'badge-emerald' : 'badge-indigo'}">${g.status}</span>
@@ -5295,12 +5278,12 @@
         listHtml = '<div class="text-sm text-muted" style="padding: 16px; text-align: center;">All tasks cleared! Take a break or add new tasks.</div>';
       } else {
         listHtml = todayTasks.map(t => `
-      <div class="flex items-center justify-between" style="border-bottom: 1px solid var(--border); padding: 8px 0;">
+      <div class="flex items-center justify-between myclasss" style="border-bottom: 1px solid var(--border); padding: 8px 0;">
         <label class="checkbox-label" style="flex: 1;">
           <input type="checkbox" ${t.completed ? 'checked' : ''} onchange="toggleTaskComplete('${t.id}')">
           <span style="${t.completed ? 'text-decoration: line-through; opacity: 0.6;' : ''}; font-weight: 500;">${escapeHtml(t.title)}</span>
         </label>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 myclasss">
           ${t.dueTime ? `<span class="text-xs text-muted">⏰ ${t.dueTime}</span>` : ''}
           <span class="badge ${t.priority === 'Critical' ? 'badge-rose' : t.priority === 'High' ? 'badge-amber' : 'badge-gray'}">${t.priority}</span>
         </div>
@@ -5332,7 +5315,7 @@
             <div style="font-weight: 700; font-size: 14.5px; color: var(--text-primary);">${escapeHtml(s.name)}</div>
             <div class="text-xs text-muted mt-1">👨‍🏫 Teacher: <strong>${escapeHtml(s.teacherName || 'Not assigned')}</strong></div>
           </div>
-          <div class="flex items-center gap-2 flex-wrap">
+          <div class="flex items-center gap-2 flex-wrap myclasss">
             <span class="badge badge-rose" title="Total Cancelled Classes">🚫 Cancelled: ${s.cancelledClasses || 0}</span>
             <span class="badge badge-amber" title="Total Absences">❌ Absent: ${s.absentClasses || 0}</span>
             <button class="btn btn-sm btn-secondary" onclick="openSubjectAttendanceHistoryModal('${s.id}')" title="View & Manage Attendance Log">Records</button>
@@ -5437,18 +5420,13 @@
                 <div>
                   ${escapeHtml(c.subjectName)}
                 </div>
-                <div>
-                  <button class="class-menu-trigger" onclick="toggleTodayClassMenu('${c.id}', event)" title="Attendance Options" aria-label="Attendance options for ${escapeHtml(c.subjectName)}">
-                    ⋮
-                  </button>
-                </div>
               </div>
             </div>
             <div class="text-xs text-muted mt-1">
               👨‍🏫 ${escapeHtml(c.teacherName || 'Instructor')} • 📍 Room ${escapeHtml(c.room || 'TBD')} • ⏰ ${slotTime}
             </div>
           </div>
-          <div class="flex items-center gap-2" style="position: relative;">
+          <div class="flex items-center gap-2 myclasss" style="position: relative;">
             ${statusBadge}
             <div class="class-menu-container">
               <div id="class-menu-${c.id}" class="class-menu-dropdown">
@@ -5506,7 +5484,7 @@
         html = '<div class="text-sm text-muted" style="padding: 16px; text-align: center;">All videos watched! Add more tutorials in Playlists.</div>';
       } else {
         html = videos.map(v => `
-      <div class="flex items-center justify-between" style="border-bottom: 1px solid var(--border); padding: 8px 0;">
+      <div class="flex items-center justify-between myclasss" style="border-bottom: 1px solid var(--border); padding: 8px 0;">
         <div style="flex: 1; padding-right: 12px;">
           <div style="font-weight: 600; font-size: 13px; color: var(--text-primary);">${escapeHtml(v.customTitle)}</div>
           <div class="text-xs text-muted mt-1">Duration: ${v.duration || 0} mins • Course Tutorial</div>
@@ -5542,7 +5520,7 @@
         html = '<div class="text-sm text-muted" style="padding: 16px; text-align: center;">No habits registered yet. Create daily study habits to build consistency!</div>';
       } else {
         html = habits.map(h => `
-      <div class="flex items-center justify-between" style="border-bottom: 1px solid var(--border); padding: 8px 0;">
+      <div class="flex items-center justify-between myclasss" style="border-bottom: 1px solid var(--border); padding: 8px 0;">
         <div class="flex items-center gap-3">
           <button class="btn btn-sm ${h.completedToday ? 'btn-primary' : 'btn-secondary'}" onclick="toggleHabitToday('${h.id}')" style="border-radius: 50%; width: 28px; height: 28px; padding: 0;">
             ${h.completedToday ? getIconHtml('check') : ''}
@@ -5765,7 +5743,7 @@
         return `
       <div class="card col-6" style="${isSelected ? 'border-color: var(--accent); background: var(--accent-light);' : ''}">
         <div class="card-header">
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 myclasss">
             <input type="checkbox" style="width: 16px; height: 16px; cursor: pointer; accent-color: var(--accent);" 
                    ${isSelected ? 'checked' : ''} onchange="toggleGoalSelect('${g.id}', this.checked)">
             <button class="btn btn-icon btn-sm btn-secondary" onclick="toggleGoalImportant('${g.id}')" title="Toggle Star/Important">
@@ -6247,7 +6225,7 @@
           ${t.notes ? `<div class="text-xs text-secondary mt-1" style="font-style: italic;">${escapeHtml(t.notes)}</div>` : ''}
         </div>
       </div>
-      <div class="flex items-center gap-1">
+      <div class="flex items-center gap-1 myclasss">
         <button class="btn btn-sm btn-secondary" onclick="moveTask('${t.id}', -1)" ${idx === 0 ? 'disabled' : ''} title="Move Up">▲</button>
         <button class="btn btn-sm btn-secondary" onclick="moveTask('${t.id}', 1)" ${idx === filtered.length - 1 ? 'disabled' : ''} title="Move Down">▼</button>
         <button class="btn btn-icon btn-sm btn-secondary" onclick="openTaskModal('${t.id}')" title="Edit Task">${getIconHtml('edit')}</button>
@@ -6831,7 +6809,7 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-between pt-2" style="border-top: 1px solid var(--border); padding-top: 10px;">
+        <div class="flex items-center justify-between pt-2 myclasss" style="border-top: 1px solid var(--border); padding-top: 10px;">
           <button class="btn btn-sm btn-secondary" onclick="openSubjectAttendanceHistoryModal('${s.id}')">
             ${getIconHtml('calendar')}
             <span>Attendance Records (${recordsCount})</span>
@@ -7889,7 +7867,7 @@
           <label style="font-weight: 700; margin:0;">Active Schedule Days (${days.length})</label>
           <button class="btn btn-sm btn-secondary" onclick="addTimetableDayPrompt()">+ Add Day</button>
         </div>
-        <div class="flex items-center gap-2 flex-wrap" id="tt-custom-days-list">
+        <div class="flex items-center gap-2 flex-wrap myclasss" id="tt-custom-days-list">
           ${days.map(d => `
             <span class="badge badge-indigo" style="padding: 6px 10px; font-size: 13px; display: inline-flex; align-items: center; gap: 6px;">
               ${escapeHtml(d)}
@@ -8003,7 +7981,7 @@
 
       const dayHeaders = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
       let html = `
-    <div class="calendar-grid">
+    <div class="calendar-grid myclasss">
       ${dayHeaders.map(dh => `<div class="calendar-day-header">${dh}</div>`).join('')}
   `;
 
@@ -8271,8 +8249,8 @@
 
       container.innerHTML = `
     <div class="card mb-4" style="margin-bottom: 20px;">
-      <div class="flex items-center justify-between flex-wrap gap-2">
-        <div class="flex items-center gap-2">
+      <div class="flex items-center justify-between flex-wrap gap-2 myclasss">
+        <div class="flex items-center gap-2 myclasss">
           <button class="btn btn-sm btn-secondary" onclick="shiftPlannerDay(-1)">&larr; Prev Day</button>
           <button class="btn btn-sm btn-secondary" onclick="setPlannerToday()">Today</button>
           <button class="btn btn-sm btn-secondary" onclick="shiftPlannerDay(1)">Next Day &rarr;</button>
@@ -8675,7 +8653,7 @@
         </div>
         <div class="form-group">
           <label>Color Theme</label>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 myclasss">
             <label><input type="radio" name="sn-color" value="yellow" ${!s || s.color === 'yellow' ? 'checked' : ''}> Yellow</label>
             <label><input type="radio" name="sn-color" value="cyan" ${s && s.color === 'cyan' ? 'checked' : ''}> Cyan</label>
             <label><input type="radio" name="sn-color" value="lime" ${s && s.color === 'lime' ? 'checked' : ''}> Lime</label>
@@ -8803,7 +8781,7 @@
       <div class="card mb-4" style="margin-bottom: 24px; border-top: 4px solid ${pl.color || 'var(--accent)'};">
         <div class="card-header">
           <div>
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 myclasss">
               <h3 class="card-title" style="font-size: 16px;">${escapeHtml(pl.name)}</h3>
               <span class="badge badge-indigo">${completedCount}/${playlistVideos.length} Completed</span>
             </div>
@@ -8831,7 +8809,7 @@
               <div class="progress-bar-wrap mb-3" style="height: 5px; margin-bottom: 10px;">
                 <div class="progress-bar-fill" style="width: ${v.progress}%;"></div>
               </div>
-              <div class="flex items-center justify-between">
+              <div class="flex items-center justify-between myclasss">
                 <button class="btn btn-sm btn-primary" onclick="openVideoPlayerModal('${v.id}')">
                   ${getIconHtml('play')}
                   <span>Watch / Player</span>
@@ -9145,7 +9123,7 @@
             <h3 class="card-title" style="font-size: 15px;">${escapeHtml(h.name)}</h3>
             <div class="text-xs text-muted mt-1">${h.category} • ${h.frequency}</div>
           </div>
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-2 myclasss">
             <span class="badge badge-amber" style="font-size: 13px;">🔥 ${h.streak}d Streak</span>
             <button class="btn btn-icon btn-sm btn-secondary" onclick="openHabitModal('${h.id}')">${getIconHtml('edit')}</button>
             <button class="btn btn-icon btn-sm btn-danger" onclick="deleteHabit('${h.id}')">${getIconHtml('trash')}</button>
@@ -9167,7 +9145,7 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-between pt-2" style="border-top: 1px solid var(--border);">
+        <div class="flex items-center justify-between pt-2 myclasss" style="border-top: 1px solid var(--border);">
           <span class="text-xs text-muted">Best Streak: ${h.bestStreak || h.streak} days</span>
           <button class="btn btn-sm ${h.completedToday ? 'btn-primary' : 'btn-secondary'}" onclick="toggleHabitToday('${h.id}')">
             ${h.completedToday ? '✓ Done Today' : 'Mark Done Today'}
@@ -9645,7 +9623,7 @@
             ${isActive ? '<span class="badge badge-indigo" style="margin-left: 6px;">Active Workspace</span>' : ''}
           </div>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 myclasss">
           ${!isActive ? `<button class="btn btn-sm btn-secondary" onclick="switchProfile('${p.id}')">Switch</button>` : ''}
           <button class="btn btn-sm btn-danger" onclick="deleteProfile('${p.id}')" ${appState.profiles.length <= 1 ? 'disabled' : ''}>Delete</button>
         </div>
@@ -10884,7 +10862,7 @@ ${doc.notes || doc.content || 'Stored in offline study repository.'}`;
           <p class="text-xs text-secondary mb-3" style="margin-bottom: 10px; line-height: 1.5;">
             Browsers block app installation from inside preview frames. Please open the app in a regular browser tab to install it on your home screen or desktop.
           </p>
-          <div class="flex items-center gap-2 flex-wrap">
+          <div class="flex items-center gap-2 flex-wrap myclasss">
             <button class="btn btn-primary btn-sm" onclick="openAppInNewTab()">
               <span>Open in New Tab ↗</span>
             </button>
