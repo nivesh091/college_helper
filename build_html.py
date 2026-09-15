@@ -86,9 +86,7 @@ html_body = """
           </div>
         </div>
 
-        <button id="global-back-btn" class="btn btn-secondary btn-icon" onclick="goBack()" aria-label="Go Back" title="Go back one step" style="display:none; margin-right: 6px;">
-          <span class="icon-slot" data-icon="arrow-left"></span>
-        </button>
+    
         <button id="mobile-menu-btn" class="btn btn-secondary btn-icon" style="display:none;" onclick="toggleMobileSidebar()" aria-label="Toggle Navigation">
           <span class="icon-slot" data-icon="menu"></span>
         </button>

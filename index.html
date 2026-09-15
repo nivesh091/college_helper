@@ -2766,10 +2766,10 @@
           </div>
         </div>
 
-        <button id="global-back-btn" class="btn btn-secondary btn-icon" onclick="goBack()" aria-label="Go Back"
+        <!-- <button id="global-back-btn" class="btn btn-secondary btn-icon" onclick="goBack()" aria-label="Go Back"
           title="Go back one step" style="display:none; margin-right: 6px;">
           <span class="icon-slot" data-icon="arrow-left"></span>
-        </button>
+        </button> -->
         <button id="mobile-menu-btn" class="btn btn-secondary btn-icon" style="display:none;"
           onclick="toggleMobileSidebar()" aria-label="Toggle Navigation">
           <span class="icon-slot" data-icon="menu"></span>
@@ -5559,19 +5559,6 @@
     // Widget 9: Quick Statistics
     function getWidgetStatisticsHtml() {
       return `
-    <div class="card col-6">
-      <div class="card-header">
-        <h3 class="card-title">
-          <span class="icon-slot" data-icon="bar-chart-3"></span>
-          <span>Weekly Study Pulse</span>
-        </h3>
-        <button class="btn btn-sm btn-secondary" onclick="navigateTo('statistics')">Detailed Stats</button>
-      </div>
-      <div id="dashboard-quick-stats-graph">
-        <!-- SVG mini chart rendered by JS -->
-        ${renderMiniSvgActivityChart()}
-      </div>
-    </div>
   `;
     }
 
