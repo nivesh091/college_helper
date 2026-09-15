@@ -492,7 +492,7 @@
     }
 
     .logo-clock-badge {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
       position: relative;
@@ -583,6 +583,7 @@
       font-weight: 500;
       transition: all 0.15s ease;
       position: relative;
+      padding: 5px 10px 5px 10px !important
     }
 
     .profile-pill:hover {
@@ -596,7 +597,8 @@
       border-radius: 50%;
       background: var(--accent);
       color: #fff;
-      display: flex;
+      display: none;
+      padding: 3px;
       align-items: center;
       justify-content: center;
       font-size: 11px;
@@ -1940,7 +1942,7 @@
       .header-logo-clock {
         display: inline-flex !important;
         align-items: center !important;
-        padding: 3px 8px !important;
+        padding: 5px 10px !important;
         gap: 6px !important;
         border-radius: 8px !important;
         flex-shrink: 0 !important;
@@ -2007,6 +2009,7 @@
         gap: 5px !important;
         border-radius: 999px !important;
         flex-shrink: 0 !important;
+        padding: 5px 10px 5px 10px !important
       }
 
       .profile-pill .icon-slot[data-icon="chevron-down"] {
@@ -2271,6 +2274,7 @@
         gap: 4px !important;
         border-radius: 999px !important;
         flex-shrink: 0 !important;
+        padding: 5px 10px 5px 10px !important
       }
 
       .profile-avatar {
@@ -2789,8 +2793,8 @@
         <!-- Subjects Button at top side besides (Nivesh icon) -->
         <button class="topbar-subjects-pill" id="topbar-subjects-btn" onclick="openTopSubjectsModal()"
           title="View all courses and faculty">
-          <span class="icon-slot" data-icon="book-open"></span>
-          <span class="topbar-subjects-text">Subjects</span>
+          <!-- <span class="icon-slot" data-icon="book-open"></span> -->
+          <span class="topbar-subjects-text">Sub</span>
           <span class="badge-count" id="topbar-subjects-count">0</span>
           <span class="icon-slot" data-icon="chevron-down"></span>
         </button>
